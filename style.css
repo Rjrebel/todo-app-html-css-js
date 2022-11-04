@@ -1,0 +1,128 @@
+body {
+  padding: 10px;
+  background-color: rgb(202, 248, 233);
+}
+
+p,
+li {
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+ol {
+  list-style-type: square;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: 100vh;
+}
+
+.edit {
+  padding: 10px;
+  background-color: rgb(161, 190, 245);
+  border: 2px solid rgb(218, 43, 249);
+  border-radius: 10px;
+}
+
+.display {
+  padding: 10px;
+  background-color: rgb(240, 200, 185);
+  border: 2px solid rgb(218, 43, 249);
+  border-radius: 10px;
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 12px 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid rgb(248, 87, 87);
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-image: linear-gradient(
+    to right,
+    rgb(206, 248, 159),
+    rgb(248, 152, 242)
+  );
+}
+
+input:hover {
+  border: 1px solid green;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.btn {
+  height: 40px;
+  width: 120px;
+  border-radius: 5px;
+  border: 2px solid blue;
+  color: blue;
+  background-color: white;
+
+  
+}
+
+
+.btn:hover {
+  color: white;
+  background-color: blue;
+}
+
+.list-item {
+  padding: 5px;
+}
+
+h1,
+h3, .btn{
+  font-family: "Lucida Handwriting", "Brush Script MT", cursive;
+}
+
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
+
+#todos div{
+  display: flex;
+  align-items: center;
+    justify-content: space-between;
+}
+
+.options{
+  margin-right: 25px;
+  display: flex;
+  gap: 25px;
+}
+ #msg{
+  color: red;
+ }
